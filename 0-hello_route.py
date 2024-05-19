@@ -7,12 +7,14 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def hello_hbnb():
     """
     Displays 'Hello HBNB!' on the main route.
     """
     return "Hello HBNB!"
+
 
 if __name__ == "__main__":
     app.url_map.strict_slashes = False
